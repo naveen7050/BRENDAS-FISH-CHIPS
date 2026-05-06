@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenda's Fish & Chips | Sheffield's Favourite</title>
+    <meta name="description" content="Traditional fish and chips in the heart of Sheffield. Freshly prepared, perfectly cooked. Order now for the best fish and chips in town.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-map-marker-alt"></i> 2 Earl Way, Sheffield S1 4QA</span>
+                    <span><i class="fas fa-phone"></i> 0114 249 3035</span>
+                </div>
+                <div class="opening-hours">
+                    <span><i class="far fa-clock"></i> Open 7 Days a Week | 11:00 AM – 9:00 PM</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Brenda's Fish & Chips Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h5>SHEFFIELD'S</h5>
+                    <h1>FAVOURITE <br><span>FISH & CHIPS</span></h1>
+                    <p class="subtitle">Freshly prepared, perfectly cooked</p>
+                    <p class="description">At Brenda's, we serve traditional fish & chips made with the finest ingredients and cooked to golden perfection.</p>
+                    <div class="hero-btns">
+                        <a href="#menu" class="btn btn-primary">View Our Menu</a>
+                        <a href="#" class="btn btn-outline">Order Now</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/hero.png" alt="Delicious Fish and Chips">
+                    <div class="quality-badge">
+                        <div class="badge-inner">
+                            <span class="quality">QUALITY</span>
+                            <span class="fresh">FRESH</span>
+                            <span class="ingredients">INGREDIENTS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="feature-item">
+                    <div class="icon"><i class="fas fa-fish"></i></div>
+                    <div class="text">
+                        <h3>FRESH FISH</h3>
+                        <p>Sourced daily for the best quality</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon"><i class="fas fa-leaf"></i></div>
+                    <div class="text">
+                        <h3>QUALITY INGREDIENTS</h3>
+                        <p>Only the finest ingredients used</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon"><i class="fas fa-utensils"></i></div>
+                    <div class="text">
+                        <h3>EXPERTLY COOKED</h3>
+                        <p>Cooked to order for perfection</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="icon"><i class="fas fa-heart"></i></div>
+                    <div class="text">
+                        <h3>LOVED LOCALLY</h3>
+                        <p>A Sheffield favourite for years</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>OUR MENU</h2>
+                    <div class="divider">
+                        <img src="https://img.icons8.com/ios-filled/50/001f3f/fish.png" alt="fish-icon">
+                    </div>
+                </div>
+                
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-category="fish">FISH</button>
+                    <button class="tab-btn" data-category="chips">CHIPS</button>
+                    <button class="tab-btn" data-category="pies">PIES & PASTIES</button>
+                    <button class="tab-btn" data-category="burgers">BURGERS</button>
+                    <button class="tab-btn" data-category="kids">KIDS MENU</button>
+                    <button class="tab-btn" data-category="drinks">DRINKS</button>
+                    <button class="tab-btn" data-category="extras">EXTRAS</button>
+                </div>
+
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Fish items -->
+                    <div class="menu-item" data-category="fish">
+                        <div class="item-info">
+                            <h3>Cod</h3>
+                            <p>Fresh, flaky cod in our light & crispy batter</p>
+                            <span class="price">£7.80</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/hero.png" alt="Cod">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="fish">
+                        <div class="item-info">
+                            <h3>Scampi (10pcs)</h3>
+                            <p>Crispy scampi, perfect with chips</p>
+                            <span class="price">£6.90</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/scampi.png" alt="Scampi">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="fish">
+                        <div class="item-info">
+                            <h3>Haddock</h3>
+                            <p>Prime haddock, golden and delicious</p>
+                            <span class="price">£8.30</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/hero.png" alt="Haddock">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="fish">
+                        <div class="item-info">
+                            <h3>Fish Cake</h3>
+                            <p>Homemade fish cake, crispy on the outside</p>
+                            <span class="price">£2.20</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/fish-cake.png" alt="Fish Cake">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="fish">
+                        <div class="item-info">
+                            <h3>Plaice</h3>
+                            <p>Tender plaice fillet cooked to perfection</p>
+                            <span class="price">£7.50</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/hero.png" alt="Plaice">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="fish">
+                        <div class="item-info">
+                            <h3>Fish Bites</h3>
+                            <p>Bite-sized pieces of battered fish</p>
+                            <span class="price">£4.50</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/fish-bites.png" alt="Fish Bites">
+                        </div>
+                    </div>
+
+                    <!-- Chips items -->
+                    <div class="menu-item" data-category="chips" style="display: none;">
+                        <div class="item-info">
+                            <h3>Large Chips</h3>
+                            <p>Traditional chunky chips, golden and crispy</p>
+                            <span class="price">£3.50</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/hero.png" alt="Chips">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="chips" style="display: none;">
+                        <div class="item-info">
+                            <h3>Cheesy Chips</h3>
+                            <p>Our famous chips topped with melted cheddar</p>
+                            <span class="price">£4.50</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/hero.png" alt="Cheesy Chips">
+                        </div>
+                    </div>
+
+                    <!-- Burgers items -->
+                    <div class="menu-item" data-category="burgers" style="display: none;">
+                        <div class="item-info">
+                            <h3>Brenda's Special Burger</h3>
+                            <p>Double beef patty, cheese, and special sauce</p>
+                            <span class="price">£6.50</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/hero.png" alt="Burger">
+                        </div>
+                    </div>
+
+                    <!-- Drinks items -->
+                    <div class="menu-item" data-category="drinks" style="display: none;">
+                        <div class="item-info">
+                            <h3>Coca Cola</h3>
+                            <p>Classic refreshing 330ml can</p>
+                            <span class="price">£1.50</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://img.icons8.com/color/144/coca-cola.png" alt="Coke">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-footer">
+                    <a href="#" class="btn btn-primary">View Full Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>ABOUT BRENDA'S</h2>
+                    <p>We're a traditional fish & chips shop based in the heart of Sheffield. At Brenda's, we take pride in serving our customers with freshly prepared food, friendly service and a welcoming atmosphere.</p>
+                    <p>Thank you for supporting a local business!</p>
+                    <a href="#" class="btn btn-primary">Learn More About Us <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/about.png" alt="Brenda's Shop Front">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="reviews" class="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2>WHAT OUR CUSTOMERS SAY</h2>
+                </div>
+                <div class="testimonials-slider">
+                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-container">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Best fish & chips in Sheffield! Always fresh, always tasty."</p>
+                            <h4>- Sarah J.</h4>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Lovely food and friendly staff. We come here every week!"</p>
+                            <h4>- Mark T.</h4>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Great portions and amazing value for money."</p>
+                            <h4>- Lisa D.</h4>
+                        </div>
+                    </div>
+                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>VISIT US TODAY!</h2>
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>2 Earl Way,<br>Sheffield S1 4QA</p>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <p>0114 249 3035</p>
+                            </div>
+                            <div class="detail-item">
+                                <i class="far fa-clock"></i>
+                                <p>Open 7 Days a Week<br>11:00 AM – 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=2+Earl+Way,Sheffield,UK&zoom=15&size=600x400&key=YOUR_API_KEY" alt="Map Location">
+                            <!-- In a real app, use an iframe or Google Maps API -->
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <h3>WE CAN'T WAIT TO SERVE YOU!</h3>
+                        <p class="handwriting">See you soon!</p>
+                        <img src="https://img.icons8.com/ios/100/001f3f/fish.png" alt="fish-illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Brenda's Logo">
+                    <p>Traditional fish & chips made with quality ingredients and lots of love.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>MENU</h4>
+                    <ul>
+                        <li><a href="#">Fish</a></li>
+                        <li><a href="#">Chips</a></li>
+                        <li><a href="#">Pies & Pasties</a></li>
+                        <li><a href="#">Burgers</a></li>
+                        <li><a href="#">Kids Menu</a></li>
+                        <li><a href="#">Drinks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Ingredients</a></li>
+                        <li><a href="#">Opening Hours</a></li>
+                        <li><a href="#">Find Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>CONTACT US</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 2 Earl Way,<br>Sheffield S1 4QA</p>
+                    <p><i class="fas fa-phone"></i> 0114 249 3035</p>
+                    <p><i class="far fa-clock"></i> Open 7 Days a Week<br>11:00 AM – 9:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Brenda's Fish & Chips. All Rights Reserved.</p>
+                <div class="logo-small">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/fish.png" alt="small-fish-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
